@@ -9,79 +9,68 @@
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1 class="title">태양광 통합 관제 시스템</h1>
-            <span>2023년 02월 17일</span>
-            <span>20:16:54</span>
-            <i class="fa-solid fa-volume-high"></i>
-            <i class="fa-solid fa-gear"></i>
-        </div>
-    </header>
-    
-    <main>
-        <div class="main-wrap">
-            <div class="main-aside">
-                <div class="main-aside-top">
-                    <div class="main-aside-top-wrap">
-                        <h1 class="main-aside-top-title">발전현황</h1>
+    <div id="container">
+        <!-- 헤더 -->
+        <header>
+            <div class="title">
+                <h1>태양광 통합 관제 시스템</h1>
+            </div>
+            <div>
+                <span>2023년 02월 17일</span>
+                <span>20:16:54</span>
+            </div>
+            <div>    
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </header>
+        
+
+        <!-- 메인 -->
+        <main>
+            <div class="main-wrap">
+                <!-- 왼쪽 -->
+                <div class="main-left">
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>발전현황</h1></div>
+                        <div class="main-aside-content"></div>
                     </div>
-                    <div class="main-aside-top-content">
-                        <li>전체 발전소 개소<span> : 10,000개</span></li>
-                        <li>현재 발전량 <span> : 32,345 kWh</span></li>
-                        <li>금일 발전량 <span> : 105,340 kWh</span></li>
-                        <li>발전시간 <span> : 3.9 h</span></li>
-                        <li>누적발전량 <span> : 304,304 MWh</span></li>
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>사업별 설치개소</h1></div>
+                        <div class="main-aside-content"></div>
+                    </div>
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>상태정보</h1></div>
+                        <div class="main-aside-content"></div>
                     </div>
                 </div>
-                <div class="main-aside-middle">
-                    <div>
-                        <h1 class="main-aside-top-title">사업별 설치개소</h1>
-                    </div>
-                    <div class="main-aside-top-content">
 
-                    </div>
+                <!-- 중앙 -->
+                <div class="main-center">
+                    <div class="main-aside-title"><h1>발전소 현황</h1></div>
+                    <div class="main-center-bottom">상세 발전소 현황</div>
                 </div>
-                <div class="main-aside-bottom">
-                    <div class="main-aside-top-wrap">
-                        <h1 class="main-aside-top-title">상태정보</h1>
-                    </div>
-                    <div class="main-aside-top-content">
 
+                <!-- 오른쪽 -->
+                <div class="main-right">
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>지난 7일 지역 평균 발전시간</h1></div>
+                        <div class="main-aside-content"></div>
+                    </div>
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>지역 시간대별 발전현황</h1></div>
+                        <div class="main-aside-content"></div>
+                    </div>
+                    <div class="main-aside">
+                        <div class="main-aside-title"><h1>지역별 상태 정보</h1></div>
+                        <div class="main-aside-content"></div>
                     </div>
                 </div>
             </div>
-            <div class="main-center">
-                <div class="main-center-top"></div>
-                <div class="main-center-bottom">
-                    <h1 class="main-aside-top-title">상세 발전소 현황</h1>
-                </div>
-            </div>
-            <div class="main-aside">
-                <div class="main-aside-top">
-                    <div class="main-aside-top-wrap">
-                        <h1 class="main-aside-top-title">지난 7일 평균 발전시간</h1>
-                    </div>
-                    <div class="main-aside-top-content"></div>
-                </div>
-                <div class="main-aside-middle">
-                    <div class="main-aside-top-wrap">
-                        <h1 class="main-aside-top-title">지역 시간대별 발전현황</h1>
-                    </div>
-                    <div class="main-aside-top-content">
+        </main>
 
-                    </div>
-                </div>
-                <div class="main-aside-bottom">
-                    <div class="main-aside-top-wrap">
-                        <h1 class="main-aside-top-title">지역별 상태 정보</h1>
-                    </div>
-                    <div class="main-aside-top-content">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+
+    </div>
 </body>
 </html>
