@@ -4,15 +4,46 @@ header {
     border: 0.5px dotted red;
 
     display: flex;
-    
-}
-
-header h1 {
-    margin: 0;
-}
-
-header div {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+
+.header-hidden {
+    width: 379px;
+}
+
+.header-title h1 {
+    font-size: 30px;
+}
+
+.header-util {
+    display: flex;
+    align-items: center;
+}
+.header-date span,
+.header-set i{
+    font-size: 25px;
+}
+
+.header-date,
+.header-set {
+    padding-top: 5px;
+}
+
+.header-date {
+    margin-right: 30px;
+}
+.header-date span{
+    font-weight: 100;   
+}
+.header-date span:nth-child(1) {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.header-set {
+    margin-right: 20px;
+}
+.header-set i:nth-child(1) {
+    margin-right: 10px;
+}
+
