@@ -9,143 +9,265 @@
     <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
-        <!-- 헤더 -->
-        <header>
-            <div class="header-hidden"></div>
-            <div class="header-title">
-                <h1>태양광 통합 관제 시스템</h1>
+    <!-- 헤더 -->
+    <header>
+        <div class="header-hidden"></div>
+        <div class="header-title">
+            <h1>태양광 통합 관제 시스템</h1>
+        </div>    
+        <div class="header-util">
+            <div class="header-date">    
+                <span>2023년 02월 17일</span>
+                <span>20:16:54</span>
             </div>    
-            <div class="header-util">
-                <div class="header-date">    
-                    <span>2023년 02월 17일</span>
-                    <span>20:16:54</span>
-                </div>    
-                <div class="header-set">    
-                    <i class="fa-solid fa-volume-high"></i>
-                    <i class="fa-solid fa-gear"></i>   
-                </div>
+            <div class="header-set">    
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-gear"></i>   
             </div>
-        </header>
+        </div>
+    </header>
         
 
-        <!-- 메인 -->
-        <main>
-            <div class="main-wrap">
-                <!-- 왼쪽 -->
-                <div class="main-left">
-                    <div class="main-aside">
-                        <div class="main-aside-title-left-top"><h1>전국 발전소 현황</h1></div>
-                        <div class="main-aside-content-left-top">
-                            <ul>
-                                <li>전체 발전소</li>
-                                <li>설치용량</li>
-                                <li>금일 발전량</li>
-                                <li>금월 발전량</li>
-                                <li>누적발전량</li>
-                            </ul>
-                            <ul>
-                                <li>10,234개소</li>
-                                <li>1,231MWh</li>
-                                <li>1,231MWh</li>
-                                <li>12,231MWh</li>
-                                <li>34,212GWh</li>
-                            </ul>
-                        </div>
+    <!-- 메인 -->
+    <main>
+        <!-- 메인전체 -->
+        <div class="main-wrap">
+            <!-- 왼쪽 -->
+            <div class="main-left">
+                <div class="main-aside">
+                    <div class="main-aside-title-left-top"><h1>전국 발전소 현황</h1></div>
+                    <div class="main-aside-content-left-top">
+                        <ul>
+                            <li>전체 발전소</li>
+                            <li>설치용량</li>
+                            <li>금일 발전량</li>
+                            <li>금월 발전량</li>
+                            <li>누적발전량</li>
+                        </ul>
+                        <ul>
+                            <li>10,234개소</li>
+                            <li>1,231MWh</li>
+                            <li>1,231MWh</li>
+                            <li>12,231MWh</li>
+                            <li>34,212GWh</li>
+                        </ul>
                     </div>
-                    <div class="main-aside">
-                        <div class="main-aside-title-left-middle"><h1>사업별 설치개소</h1></div>
-                        <div class="main-aside-content-left-middle">
-                            <div class="main-aside-content-left-middle-graph">
-                                <div class="main-aside-content-left-middle-graph-wrap">
+                </div>
+                <div class="main-aside">
+                    <div class="main-aside-title-left-middle"><h1>사업별 설치개소</h1></div>
+                    <div class="main-aside-content-left-middle">
+                        <div class="main-aside-content-left-middle-graph">
+                            <div class="main-aside-content-left-middle-graph-wrap">
 
-                                </div>
-                            </div>
-                            <div class="main-aside-content-left-middle-content">
-                                <ul>
-                                    <li><span></span>RPS사업</li>
-                                    <li><span></span>융복합</li>
-                                    <li><span></span>건물지원사업</li>
-                                    <li><span></span>주택사업</li>
-                                    <li><span></span>RE100</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="main-aside">
-                        <div class="main-aside-title-left-bottom"><h1>전국 상태 정보</h1></div>
-                        <div class="main-aside-content-left-bottom">
-                            <div class="state-info-green">
-                                <div>정상</div>
-                                <div>●</div>
-                                <div>12,333</div>
-                            </div>
-                            <div class="state-info-blue">
-                                <div>주의</div>
-                                <div>●</div>
-                                <div>234</div>
-                            </div>
-                            <div class="state-info-yellow">
-                                <div>경고</div>
-                                <div>●</div>
-                                <div>234</div>
-                            </div>
-                            <div class="state-info-red">
-                                <div>고장</div>
-                                <div>●</div>
-                                <div>12</div>
-                            </div>
-                            <div class="state-info-white">
-                                <div>미작동</div>
-                                <div>●</div>
-                                <div>0</div>
-                            </div>
+                        <div class="main-aside-content-left-middle-content">
+                            <ul>
+                                <li><span></span>RPS사업</li>
+                                <li><span></span>융복합</li>
+                                <li><span></span>건물지원사업</li>
+                                <li><span></span>주택사업</li>
+                                <li><span></span>RE100</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <!-- 중앙 -->
-                <div class="main-center">
-                    <div class="main-center-top">
-                        <div class="main-center-all-state">
-                            <div>전체상태 : </div>
-                            <div class="main-center-all-state-state">
-                                <div>양호</div>
-                                <div>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</div>
-                            </div>
+                <div class="main-aside">
+                    <div class="main-aside-title-left-bottom"><h1>전국 상태 정보</h1></div>
+                    <div class="main-aside-content-left-bottom">
+                        <div class="state-info-green">
+                            <div>정상</div>
+                            <div>●</div>
+                            <div>12,333</div>
                         </div>
-                        <div class="main-center-box"></div>
-                        <div class="main-center-map"></div>
-                    </div>
-                    <div class="main-center-bottom">
-                        <h1>상세 발전소 현황</h1>
-                    </div>    
-                    <div class=""></div>
-                    <div></div>
-                    </div>
-                </div>
-
-                <!-- 오른쪽 -->
-                <div class="main-right">
-                    <div class="main-aside">
-                        <div class="main-aside-title-right-top">
-                            <h1>지난 7일 지역 평균 발전시간</h1>
-                            <span>(단위 : h)</span>
+                        <div class="state-info-blue">
+                            <div>주의</div>
+                            <div>●</div>
+                            <div>234</div>
                         </div>
-                        <div class="main-aside-content-right-top"></div>
-                    </div>
-                    <div class="main-aside">
-                        <div class="main-aside-title-right-middle">
-                            <h1>지역 시간대별 발전현황</h1>
-                            <span>(단위 : MWh)</span>
+                        <div class="state-info-yellow">
+                            <div>경고</div>
+                            <div>●</div>
+                            <div>234</div>
                         </div>
-                        <div class="main-aside-content-right-middle"></div>
-                    </div>
-                    <div class="main-aside">
-                        <div class="main-aside-title-right-bottom"><h1>지역별 상태 정보</h1></div>
-                        <div class="main-aside-content-right-bottom"></div>
+                        <div class="state-info-red">
+                            <div>고장</div>
+                            <div>●</div>
+                            <div>12</div>
+                        </div>
+                        <div class="state-info-white">
+                            <div>미작동</div>
+                            <div>●</div>
+                            <div>0</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
+
+            <!-- 중앙 -->
+            <div class="main-center">
+                <div class="main-center-top">
+                    <div class="main-center-all-state">
+                        <div>전체상태 : </div>
+                        <div class="main-center-all-state-state">
+                            <div>양호</div>
+                            <div>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</div>
+                        </div>
+                    </div>
+                    <div class="main-center-box-map">
+                        <div class="main-center-box">
+                            <div class="main-center-box-wrap">
+                                <div class="main-center-box-title">
+                                    <h1>서울</h1>
+                                </div>
+                                <div class="main-center-box-all">
+                                    <h2>총 발전소 930개소</h2>
+                                </div>
+                                <div class="main-center-box-content-wrap">
+                                    <table class="main-center-box-content">
+                                        <tr>
+                                            <td>설치용량</td>
+                                            <td>125MWh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>금일 발전량</td>
+                                            <td>123MWh</td>
+                                        </tr>    
+                                        <tr>
+                                            <td>금월 발전량</td>
+                                            <td>12,345MWh</td>
+                                        </tr>
+                                        <tr>    
+                                            <td>누적 발전량</td>
+                                            <td>125GWh</td>
+                                        </tr>
+                                    </table>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="main-center-map"></div>
+                    </div>    
+                </div>
+                <div class="main-center-bottom-wrap">
+                    <div class="main-center-bottom-top">
+                        <h1>상세 발전소 현황</h1>
+                    </div>
+                    <div class="main-center-bottom-bottom">
+                        <div class="main-center-bottom-bottom-left">
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                            <div class="main-center-bottom-region">
+                                <div>서울</div>
+                                <div>927</div>
+                            </div>
+                        </div>
+                        <div class="main-center-bottom-bottom-right">
+                            <div class="main-center-bottom-bottom-right-box">
+                                <div class="main-center-bottom-right-box-title">
+                                    <h1>서울</h1>
+                                </div>
+                                <div class="main-center-bottom-right-samebox">
+                                    <div class="main-center-bottom-right-small">평균발전시간/개소수</div>
+                                    <div class="main-center-bottom-right-big">3.65 / 917</div>
+                                </div>
+                                <div class="main-center-bottom-right-samebox">
+                                    <div class="main-center-bottom-right-small">통신성공률</div>
+                                    <div class="main-center-bottom-right-big">100%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            
+            
+            <!-- 오른쪽 -->
+            <div class="main-right">
+                <div class="main-aside">
+                    <div class="main-aside-title-right-top">
+                        <h1>지난 7일 지역 평균 발전시간</h1>
+                        <span>(단위 : h)</span>
+                    </div>
+                    <div class="main-aside-content-right-top">
+                        <div class="right-top-content-title"></div>
+                        <div class="right-top-content-content"></div>
+                    </div>
+                </div>
+                <div class="main-aside">
+                    <div class="main-aside-title-right-middle">
+                        <h1>지역 시간대별 발전현황</h1>
+                        <span>(단위 : MWh)</span>
+                    </div>
+                    <div class="main-aside-content-right-middle"></div>
+                </div>
+                <div class="main-aside">
+                    <div class="main-aside-title-right-bottom"><h1>지역별 상태 정보</h1></div>
+                    <div class="main-aside-content-right-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
