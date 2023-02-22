@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/common.css">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
     <!-- 헤더 -->
@@ -27,7 +28,7 @@
         </div>
     </header>
         
-
+    
     <!-- 메인 -->
     <main>
         <!-- 메인전체 -->
@@ -45,7 +46,7 @@
                             <li>누적발전량</li>
                         </ul>
                         <ul>
-                            <li>10,234개소</li>
+                            <li>10,234 개소</li>
                             <li>1,231MWh</li>
                             <li>1,231MWh</li>
                             <li>12,231MWh</li>
@@ -58,7 +59,10 @@
                     <div class="main-aside-content-left-middle">
                         <div class="main-aside-content-left-middle-graph">
                             <div class="main-aside-content-left-middle-graph-wrap">
-
+                                <div style="width: 250px; height: 250px;">
+                                    <!--차트가 그려질 부분-->
+                                    <canvas id="pieChart"></canvas>
+                                </div>
                             </div>
                         </div>
                         <div class="main-aside-content-left-middle-content">
@@ -103,15 +107,16 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- 중앙 -->
             <div class="main-center">
                 <div class="main-center-top">
                     <div class="main-center-all-state">
-                        <div>전체상태 : </div>
+                        <div class="all-state"><h2>전체상태</h2></div>
+                        <span> : </span>
                         <div class="main-center-all-state-state">
                             <div>양호</div>
-                            <div>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</div>
+                            <div></div>
                         </div>
                     </div>
                     <div class="main-center-box-map">
@@ -251,8 +256,15 @@
                         <span>(단위 : h)</span>
                     </div>
                     <div class="main-aside-content-right-top">
-                        <div class="right-top-content-title"></div>
-                        <div class="right-top-content-content"></div>
+                        <div class="right-content-title"><h2>서울</h2></div>
+                        <div class="right-top-content-content">
+                            <div class="right-top-content-graph">
+                                <div style="width: 400px; height: 400px;">
+                                    <!--차트가 그려질 부분-->
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="main-aside">
@@ -260,14 +272,65 @@
                         <h1>지역 시간대별 발전현황</h1>
                         <span>(단위 : MWh)</span>
                     </div>
-                    <div class="main-aside-content-right-middle"></div>
+                    <div class="main-aside-content-right-middle">
+                        <div class="right-content-title"><h2>서울</h2></div>
+                        <div class="right-top-content-content">
+                            <div class="right-top-content-graph">
+                                <!-- 차트 크기 -->
+                                <div style="width: 400px; height: 400px;">
+                                    <!--차트가 그려질 부분-->
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="main-aside">
                     <div class="main-aside-title-right-bottom"><h1>지역별 상태 정보</h1></div>
-                    <div class="main-aside-content-right-bottom"></div>
+                    <div class="main-aside-content-right-bottom">
+                        <div class="right-bottom-content-top">
+                            <div class="right-bottom-content-left"><h1>서울</h1></div>
+                            <div class="right-bottom-content-right">
+                                <h1><img src="/static/images/sun.png"></h1>
+                                <div><h1>맑음</h1></div>
+                                <div><h1>15℃</h1></div>
+                            </div>
+                        </div>
+                        <div class="right-bottom-content-bottom">
+                            <div class="state-info-green">
+                                <div>정상</div>
+                                <div>●</div>
+                                <div>12,333</div>
+                            </div>
+                            <div class="state-info-blue">
+                                <div>주의</div>
+                                <div>●</div>
+                                <div>234</div>
+                            </div>
+                            <div class="state-info-yellow">
+                                <div>경고</div>
+                                <div>●</div>
+                                <div>234</div>
+                            </div>
+                            <div class="state-info-red">
+                                <div>고장</div>
+                                <div>●</div>
+                                <div>12</div>
+                            </div>
+                            <div class="state-info-white">
+                                <div>미작동</div>
+                                <div>●</div>
+                                <div>0</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="/static/js/linechart.js"></script>
+    <script src="/static/js/barchart.js"></script>
+    <script src="/static/js/piechart.js"></script>
+    <script src="/static/js/doughnut.js"></script>
 </body>
 </html>

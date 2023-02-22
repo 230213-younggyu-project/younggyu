@@ -7,10 +7,7 @@
 /* 양쪽 상단, 중단, 하단 크기*/
 .main-aside-content-left-top,
 .main-aside-content-left-middle,
-.main-aside-content-left-bottom,
-.main-aside-content-right-top,
-.main-aside-content-right-middle,
-.main-aside-content-right-bottom {
+.main-aside-content-left-bottom {
     width: 450px;
     height: 250px;
     
@@ -23,7 +20,18 @@
     justify-content: space-around;
     align-items: center;
 }
+.main-aside-content-right-top,
+.main-aside-content-right-middle,
+.main-aside-content-right-bottom {
+    width: 450px;
+    height: 250px;
+    
+    margin: 10px auto;
 
+    border: 1px solid #333;
+    border-radius: 20px;
+
+}
 /* 왼쪽, 오른쪽 */
 .main-left, .main-right {
     width: 25%;
@@ -50,14 +58,19 @@
     margin: 0;
     padding: 0;
     width: 55%;
+
+    
 }
 .main-aside-content-left-top ul:nth-child(1) {
     width: 45%;
     border-right: 2px solid black;
 }
-.main-aside-content-left-top ul li {
-    
+.main-aside-content-left-top ul:nth-child(2) {
+    font-weight: bold;
+}
+.main-aside-content-left-top ul li {   
     margin-left: 50px;
+
 }
 
 /* 왼쪽 중앙 */
@@ -87,10 +100,15 @@
     padding: 0;
 }
 .main-aside-content-left-middle-content ul li {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 .main-aside-content-left-middle-content ul li span{
-
+    display: inline-block;
+    margin-right: 5px;
+    width: 25px;
+    height: 15px;
     border: 0.5px dotted red;
 }
 /* 왼쪽 하단 */
@@ -104,7 +122,6 @@
     color: blue;
 }
 .state-info-yellow {
-
     color: yellowgreen;
 }
 .state-info-red {
@@ -159,10 +176,30 @@
     border-bottom-right-radius: 50px;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* 전체상태, : 부분 */
+.all-state h2,
+.main-center-all-state span {
+    font-size: 25px;
+    margin-right: 10px;
 }
 /* 메인 중앙 전체상태 */
 .main-center-all-state-state {
     display: flex;
+}
+/* 메인 중앙 전체상태 옆 */
+.main-center-all-state-state div {
+    font-size: 25px;
+}
+.main-center-all-state-state div:nth-child(2) {
+    width: 500px;
+    height: 33px;
+    margin: auto 10px;
+    border: 0.5px dotted red;
+
 }
 .main-center-box-map {
     display: flex;
@@ -251,6 +288,7 @@
 .main-center-bottom-bottom-left {
     width: 70%;    
     height: 100%;
+    padding-left: 10px;
 
     display: flex;
     flex-wrap: wrap;
@@ -356,12 +394,110 @@
     align-items: center;
     padding-top: 5px;
 }
-.main-aside-content-right-top {
-    width: 100%;
-}
-.right-top-content-title {
+/* 오른쪽 박스 안 제목 */
+.right-content-title {
     width: 100%;
     height: 30px;
 
+    margin-top: 10px;
     border: 0.5px dotted red;
+}
+.right-content-title h2{
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.right-top-content-content {
+    width: 100%;
+    height: 200px;
+
+    border: 0.5px dotted red;
+}
+/* 오른쪽 그래프 */
+.right-top-content-graph {
+    width: 95%;
+    height: 180px;
+
+    margin: 10px auto;
+    border: 0.5px dotted red;
+}
+.right-bottom-content-top{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+
+    border: 0.5px dotted red;
+}
+/* 오른쪽 밑 박스 안 왼쪽 */
+.right-bottom-content-left{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.5px dotted red;
+}
+.right-bottom-content-left h1{
+    font-size: 33px;
+}
+.right-bottom-content-left h1,
+.right-bottom-content-right h1 {
+    margin: 0;
+}
+/* 오른쪽 밑 박스 안 오른쪽 */
+.right-bottom-content-right {
+    width: 60%;
+
+    display: flex;
+    
+    align-items: center;
+
+    border: 0.5px dotted red;
+}
+/* 오른쪽 아래 내용 이미지 */
+.right-bottom-content-right h1 img {
+    margin: 7px 0px 0px 60px;
+    width: 33px;
+    height: 33px;
+}
+.right-bottom-content-right div h1 {
+    margin-left: 20px;
+}
+/* 오른쪽 밑 박스 안 아래 */
+.right-bottom-content-bottom  {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    margin: 10px auto;
+    border: 0.5px dotted red;
+}
+.right-bottom-content-bottom .state-info-green,
+.right-bottom-content-bottom .state-info-blue,
+.right-bottom-content-bottom .state-info-yellow,
+.right-bottom-content-bottom .state-info-red,
+.right-bottom-content-bottom .state-info-white {
+    width: 90px;
+    height: 100%;
+    border: 0.5px dotted red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0px auto;
+    font-size: 20px;
+
+}
+.right-bottom-content-bottom .state-info-green div:nth-child(3),
+.right-bottom-content-bottom .state-info-blue div:nth-child(3),
+.right-bottom-content-bottom .state-info-yellow div:nth-child(3),
+.right-bottom-content-bottom .state-info-red div:nth-child(3),
+.right-bottom-content-bottom .state-info-white div:nth-child(3) {
+    font-size: 25px;
 }
