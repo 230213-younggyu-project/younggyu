@@ -6,7 +6,7 @@ var myChart = new Chart(context, {
     data: { // 차트에 들어갈 데이터
         labels: [
             //x 축
-            '1','2','3','4','5','6','7'
+            '월','화','수','목','금','토','일'
         ],
         datasets: [
             { //데이터

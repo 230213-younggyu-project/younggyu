@@ -1,11 +1,12 @@
 header {
     width: 100%;
-    height: 60px;
-    border: 0.5px dotted red;
+    height: 50px;
+    border-bottom: 1px solid black;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header-hidden {
@@ -14,6 +15,8 @@ header {
 
 .header-title h1 {
     font-size: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 .header-util {
