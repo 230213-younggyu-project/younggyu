@@ -13,7 +13,7 @@
     
     margin: 10px auto;
 
-    border: 1px solid black;
+    
     border-radius: 20px;
 
     box-shadow: 3px 3px 10px 1px;
@@ -32,7 +32,6 @@
 
     box-shadow: 3px 3px 10px 1px;
 
-    border: 1px solid black;
     border-radius: 20px;
 
 }
@@ -70,12 +69,18 @@
     padding: 0;
 
     width: 55%;
+
 }
 .main-aside-content-left-top ul:nth-child(1) {
     width: 45%;
     border-right: 2px solid black;
+   
 }
-.main-aside-content-left-top ul:nth-child(2) {
+.main-aside-content-left-top ul:nth-child(1) li,
+.main-aside-content-left-top ul:nth-child(2) li{
+    font-size: 22px;
+}
+.main-aside-content-left-top ul:nth-child(2) li {
     font-weight: bold;
 }
 .main-aside-content-left-top ul:nth-child(2) li:nth-child(1) {
@@ -105,7 +110,7 @@
     
     margin: 10px auto;
 
-    border: 1px solid #333;
+    
     border-radius: 20px;
 
     display: flex;
@@ -237,7 +242,7 @@
     
     box-shadow: 3px 3px 10px 1px;
 
-    border: 1px solid black;
+    
     border-radius: 15px;
 }
 .main-center-box-wrap {
@@ -253,6 +258,7 @@
     font-size: 40px;
     margin-top: 20px;
     margin-left: 0px;
+    font-weight: bold;
 
 }
 .main-center-box-all h2 {
@@ -287,13 +293,21 @@
 /* 지도 옆 박스 */
 
 .main-center-map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 400px;
     height: 500px;
 
     margin-top: 20px;
     margin-right: 50px;
-    border: 1px solid black;
 }
+.main-center-map img {
+    height: 100%;
+}
+
 /* 센터 아래 제목 */
 .main-center-bottom-wrap {
     height: 36.333%;
@@ -349,9 +363,14 @@
 
     border-radius: 20px;
 }
+.main-center-bottom-region-first div:nth-child(1), 
+.main-center-bottom-region div:nth-child(1) {
+    font-size: 20px;
+}
+
 .main-center-bottom-region-first div:nth-child(2),
 .main-center-bottom-region div:nth-child(2) {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
 
     color: #326ef0;
@@ -371,7 +390,7 @@
 
     margin: 12px auto;
 
-    border: 1px solid black;
+    
     box-shadow: 3px 3px 10px 1px;
     
     border-radius: 15px;
@@ -380,6 +399,7 @@
     font-size: 30px;
     margin: 15px auto;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 /* 메인 센터 하단 오른쪽 같은 박스 두개 */
 .main-center-bottom-right-samebox {
@@ -397,6 +417,7 @@
 }
 .main-center-bottom-right-small{
     margin-bottom: 5px;
+    font-weight: bold;
 }
 .main-center-bottom-right-big{
     width: 210px;
@@ -410,6 +431,7 @@
     border: 1px solid black;
     border-radius: 10px;
     font-size: 30px;
+    font-weight: bold;
     color: #0a7c56;
 }
 .main-aside-title-left-top {
@@ -491,6 +513,7 @@
 }
 .right-bottom-content-left h1{
     font-size: 33px;
+    font-weight: bold;
 }
 .right-bottom-content-left h1,
 .right-bottom-content-right h1 {

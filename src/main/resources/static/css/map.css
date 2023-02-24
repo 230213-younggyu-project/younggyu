@@ -1,0 +1,121 @@
+.main-center-map .mark-seoul,
+.main-center-map .mark-incheon,
+.main-center-map .mark-gyeonggi,
+.main-center-map .mark-gangwon,
+.main-center-map .mark-chungbuk,
+.main-center-map .mark-sejong,
+.main-center-map .mark-daejeon,
+.main-center-map .mark-chungnam,
+.main-center-map .mark-jeonbuk,
+.main-center-map .mark-jeonam,
+.main-center-map .mark-gwangju,
+.main-center-map .mark-jeju,
+.main-center-map .mark-gyeongbuk,
+.main-center-map .mark-daegu,
+.main-center-map .mark-ulsan,
+.main-center-map .mark-busan,
+.main-center-map .mark-gyeognam {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+    padding-right: 2px;
+    width: 40px;
+    height: 25px;
+    background-image: url(/static/images/mark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-center-map .mark-seoul {
+    left: 125px;
+    top: 85px;
+}
+.main-center-map .mark-incheon{
+    left: 95px;
+    top: 105px;
+}
+.main-center-map .mark-gyeonggi{
+    left: 150px;
+    top: 130px;
+}
+.main-center-map .mark-gangwon{
+    left: 225px;
+    top: 80px;
+}
+.main-center-map .mark-chungbuk{
+    left: 210px;
+    top: 168px;
+}
+.main-center-map .mark-sejong{
+    left: 135px;
+    top: 190px;
+}
+.main-center-map .mark-chungnam{
+    left: 100px;
+    top: 210px;
+}
+.main-center-map .mark-daejeon{
+    left: 120px;
+    top: 220px;
+}
+.main-center-map .mark-jeonbuk{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-jeonam{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-gwangju{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-jeju{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-gyeongbuk{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-daegu{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-ulsan{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-busan{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-gyeognam{
+    left: ;
+    top: ;
+}
+.main-center-map .mark-seoul:hover,
+.main-center-map .mark-incheon:hover,
+.main-center-map .mark-gyeonggi:hover,
+.main-center-map .mark-gangwon:hover,
+.main-center-map .mark-chungbuk:hover,
+.main-center-map .mark-sejong:hover,
+.main-center-map .mark-daejeon:hover,
+.main-center-map .mark-chungnam:hover,
+.main-center-map .mark-jeonbuk:hover,
+.main-center-map .mark-jeonam:hover,
+.main-center-map .mark-gwangju:hover,
+.main-center-map .mark-jeju:hover,
+.main-center-map .mark-gyeongbuk:hover,
+.main-center-map .mark-daegu:hover,
+.main-center-map .mark-ulsan:hover,
+.main-center-map .mark-busan:hover,
+.main-center-map .mark-gyeognam:hover {
+    background-image: url(/static/images/mark_hover.png);
+    color: white;
+}
