@@ -56,3 +56,11 @@ td,tr {
     width: 200px;
     height: 180px;
 }
+.fa-solid {
+    cursor: pointer;
+}
+#pieChart,
+#lineChart,
+#barChart {
+    cursor: pointer;
+}

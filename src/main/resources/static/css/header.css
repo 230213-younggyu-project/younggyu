@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .header-date span,
 .header-set i{
     font-size: 25px;
