@@ -12,16 +12,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/all")
+@RequestMapping("/plant")
 public class PlantAllApi {
 
     @Autowired
     private PlantService plantService;
 
-    @GetMapping
+    @GetMapping("/all")
     private ResponseEntity<CMRespDto> getAllPlant(PlantAllDto plantAllDto) {
 
-        return ResponseEntity.ok().body(new CMRespDto<>(HttpStatus.OK.value(), "lant all", plantService.getAllPlant(plantAllDto)));
+        return ResponseEntity.ok().body(new CMRespDto<>(HttpStatus.OK.value(), "plant all", plantService.getAllPlant(plantAllDto)));
     }
 
 

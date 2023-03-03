@@ -5,10 +5,12 @@ import lombok.Data;
 @Data
 
 public class PlantAllDto {
-    private int plantTotalCount;
-    private String plantRegion;
-    private int capacity;
-    private String state;
+    private int plantAll;
+    private int capacityAll;
+    private int todayCpg;
+    private int monthCpg;
+    private int cpgAll;
     private String business;
+    private String state;
 
 }
