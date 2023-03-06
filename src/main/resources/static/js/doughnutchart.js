@@ -1,19 +1,19 @@
 var context = document
-    .getElementById('pieChart')
+    .getElementById('doughnutChart')
     .getContext('2d');
 var myChart = new Chart(context, {
-    type: 'pie', // 차트의 형태
+    type: 'doughnut', // 차트의 형태
     data: { // 차트에 들어갈 데이터
         labels: [
             //x 축
-            '1','2','3','4','5'
+            'RPS사업','융복합','건물지원사업','주택사업','RE100'
         ],
         datasets: [
             { //데이터
-                label: 'test1', //차트 제목
+                label: 'business', //차트 제목
                 fill: false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
                 data: [
-                    21,19,25,20,23,26,25 //x축 label에 대응되는 데이터 값
+                    21,19,25,20,23 //x축 label에 대응되는 데이터 값
                 ],
                 backgroundColor: [
                     //색상
@@ -22,7 +22,7 @@ var myChart = new Chart(context, {
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
+                    
                 ],
                 
            
@@ -40,13 +40,7 @@ var myChart = new Chart(context, {
     },
     options: {
         scales: {
-            yAxes: [
-                {
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }
-            ]
+            
         }
     }
 });

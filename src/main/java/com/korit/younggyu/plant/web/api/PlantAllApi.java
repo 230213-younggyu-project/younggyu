@@ -3,7 +3,6 @@ package com.korit.younggyu.plant.web.api;
 import com.korit.younggyu.plant.service.PlantService;
 import com.korit.younggyu.plant.web.dto.CMRespDto;
 import com.korit.younggyu.plant.web.dto.PlantAllDto;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,9 +18,9 @@ public class PlantAllApi {
     private PlantService plantService;
 
     @GetMapping("/all")
-    private ResponseEntity<CMRespDto> getAllPlant(PlantAllDto plantAllDto) {
-
-        return ResponseEntity.ok().body(new CMRespDto<>(HttpStatus.OK.value(), "plant all", plantService.getAllPlant(plantAllDto)));
+    private ResponseEntity<CMRespDto<?>> getAllPlant(PlantAllDto plantAllDto) {
+        plantService.getBusiness();
+        return ResponseEntity.ok().body(new CMRespDto<>(HttpStatus.OK.value(), "plant all", null));
     }
 
 
