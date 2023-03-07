@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @Data
 public class StateEntity {
     private String state;      // 상태 (정상,경고 등)
-    private int statsCount;    // 상태별 개수
+    private int stateCount;    // 상태별 개수
 }

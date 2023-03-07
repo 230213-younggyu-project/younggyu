@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 @Mapper
-public interface PlantRespository {
+public interface PlantRepository {
     public List<BusinessEntity> getBusiness();
 
     public List<StateEntity> getState();

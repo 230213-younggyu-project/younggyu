@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 public class TotalCpgEntity {
     private int totalTpg;
     private int totalMpg;
-    private int totalCpg;
+    private long totalCpg;
 }

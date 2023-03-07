@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class TotalPlantEntity {
-
     private int totalPlant;    // 발전소 전체개수
     private int totalCapacity; // 용량
 }
